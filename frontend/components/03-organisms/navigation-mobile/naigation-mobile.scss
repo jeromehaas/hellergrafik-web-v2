@@ -1,0 +1,75 @@
+.navigation-mobile {
+	width: 100%;
+	max-width: 100%;
+	
+	&__bar, .bar {
+		display: flex;
+		flex-direction: row;
+		background-color: $white-100;
+		justify-content: space-between;
+		width: 100%;
+		flex-grow: 1;
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		padding: 0 16px;
+		z-index: 5;
+	}
+	
+	&__logo-link {
+		width: 70px;
+		padding: 8px 24px 8px 0;
+		margin-right: auto;
+	}
+
+	&__item {
+		margin-left: auto;
+	}
+	
+	&__placeholder, .placeholder {
+		height: 60px;
+		width: 100%;
+	}
+	
+	&__menu, .menu {
+		top: 64px;
+		right: 16px;
+		left: 16px;
+		height: 0px;
+		position: fixed;
+		background-color: #f5f5f5;;
+		transition: 0.3s ease;
+		overflow: hidden;
+		height: 0;
+		box-shadow: 0px 80px 80px 8px #f5f5f5;
+		z-index: 5;
+		overflow: visible;
+		
+		&__list, .list {
+
+			&__item {
+				position: absolute;
+				right: -320px;
+				font-size: 26px !important;
+				transition: 0.3s ease;
+				right: -100%;
+				
+				&:nth-child(1) { top: 8px; }
+				&:nth-child(2) { top: 48px; }
+				&:nth-child(3) { top: 88px; }
+			}
+
+		}
+
+	}
+
+}
+
+@media screen and (min-width: 450px) {
+
+	.navigation-mobile {
+		display: none;
+	}
+
+}

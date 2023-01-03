@@ -9,9 +9,13 @@
 @import '../components/01-atoms/heading/heading.scss';
 @import '../components/01-atoms/small-arrow-link/small-arrow-link.scss';
 @import '../components/01-atoms/big-arrow-link/big-arrow-link.scss';
+@import '../components/01-atoms/hamburger/hamburger.scss';
 
 // MOLECULES
 @import '../components/02-molecules/project-preview/project-preview.scss';
+
+// ORGANISMS 
+@import '../components/03-organisms/navigation-mobile/naigation-mobile.scss';
 
 // LAYOUTS
 @import '../components//04-layouts/page/page.scss';
