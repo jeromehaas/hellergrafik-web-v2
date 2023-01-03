@@ -1,0 +1,32 @@
+.small-arrow-link {
+	display: inline-block;
+
+	&__arrow {
+		display: inline-block;
+    fill: #151515;
+    transition: 0.3s ease;
+    height: 12px;
+    vertical-align: baseline;
+    position: relative;
+    top: 1px;
+	}
+
+	&__text {
+		display: inline;
+    transition: 0.3s ease;
+    border-bottom: 2px solid #000000;
+    margin-left: 3px;
+	}
+
+	&:hover {
+
+		& .small-arrow-link__text,
+		& .small-arrow-link__arrow {
+			color: #5101BE;
+			fill: #5101BE;
+			border-color: #5101BE;
+		}
+		
+	}
+
+}
