@@ -1,8 +1,10 @@
+import Text from "components/01-atoms/text/text";
+
 const Start = () => {
 
   return (
     <div className="start">
-			Hello World!
+			<Text>hello</Text>
 		</div>
   );
 

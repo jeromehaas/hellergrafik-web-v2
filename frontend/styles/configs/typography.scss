@@ -1,4 +1,20 @@
 h1, h2, h3, h4, h5, h6, p, li, a, td, p {
 	font-family: 'fj-platz-groteske', serif;
 	font-weight: 900;
+	color: $black-100;
+}
+
+.text {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 700;
+}
+
+@media (min-width: 700px) {
+
+	.text {
+		font-size: 24px;
+		line-height: 33px;
+	}
+
 }

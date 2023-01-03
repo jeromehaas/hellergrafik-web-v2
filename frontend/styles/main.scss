@@ -1,4 +1,8 @@
+// CONFIGS
 @import './configs/reset.scss';
 @import './configs/fonts.scss';
 @import './configs/variables.scss';
 @import './configs/typography.scss';
+
+// ATOMS
+@import '../components/01-atoms/text/text.scss';
