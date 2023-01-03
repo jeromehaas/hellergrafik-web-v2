@@ -2,7 +2,7 @@ const Start = () => {
 
   return (
     <div className="start">
-			Start
+			Hello World!
 		</div>
   );
 
