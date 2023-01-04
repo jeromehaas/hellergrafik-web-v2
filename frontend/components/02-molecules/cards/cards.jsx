@@ -37,7 +37,7 @@ const Cards = ({ className }) => {
 
 };
 
-Cards.PropTypes = {
+Cards.propTypes = {
 	className: PropTypes.string,
 };
 

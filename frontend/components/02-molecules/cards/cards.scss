@@ -2,7 +2,7 @@
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: 1fr 1fr;
-	grid-gap: 16px;
+	grid-gap: 32px;
 	
 	&__item, .item {
 		background-color: $white-100;

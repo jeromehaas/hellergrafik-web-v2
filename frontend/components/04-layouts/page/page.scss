@@ -1,21 +1,11 @@
 .page {
 	background-color: $white-80;
 	
-	&__content {
 		width: 100%;
 		max-width: 2560px;
-		margin: 0 auto 16px auto;
-		padding: 0 16px;
-	}
-
-	@media (min-width: 700px) {
-
-		&__content {
-			padding: 0 32px;
-			margin: 0 auto 32px auto;
+		
+		@media (min-width: 700px) {
 		}
-
+		
 	}
-
-}
 

@@ -11,9 +11,7 @@ const Page = ({ className, children }) => {
 		<div className={`${ className } page`}>
 			<NavigationMobile />
 			<NavigationDesktop />
-			<div className="page__content">
 			{ children }
-			</div>
 			<FooterDesktop />
 			<FooterMobile />
 		</div>
