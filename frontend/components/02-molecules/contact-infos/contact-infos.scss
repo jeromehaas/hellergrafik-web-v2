@@ -1,0 +1,10 @@
+.contact-infos {
+	display: grid;
+	grid-template-columns: 400px 400px;
+	grid-column-gap: 16px;
+
+	@media (min-width: 700px) {
+		grid-column-gap: 32px;
+	}
+	
+}
