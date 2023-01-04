@@ -14,6 +14,7 @@
 	&__text {
     transition: 0.3s ease;
     margin-left: 3px;
+		border-bottom: 2px solid $black-100;
 	}
 
 	&:hover {
@@ -22,7 +23,7 @@
 		& .small-arrow-link__arrow {
 			color: #5101BE;
 			fill: #5101BE;
-			border-color: #5101BE;
+			border-color: #5101BE !important;
 		}
 		
 	}
