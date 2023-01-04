@@ -1,6 +1,9 @@
 import NavigationMobile from "components/03-organisms/navigation-mobile/navigation-mobile";
 import NavigationDesktop from "components/03-organisms/navigation-desktop/navigation-desktop";
+import FooterDesktop from "components/03-organisms/footer-desktop/footer-desktop";
+import FooterMobile from "components/03-organisms/footer-mobile/footer-mobile";
 import PropTypes from "prop-types";
+
 
 const Page = ({ className, children }) => {
 
@@ -8,7 +11,11 @@ const Page = ({ className, children }) => {
 		<div className={`${ className } page`}>
 			<NavigationMobile />
 			<NavigationDesktop />
+			<div className="page__content">
 			{ children }
+			</div>
+			<FooterDesktop />
+			<FooterMobile />
 		</div>
 	);
 
