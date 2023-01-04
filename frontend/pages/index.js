@@ -5,11 +5,13 @@ import BigArrowLink from "components/01-atoms/big-arrow-link/big-arrow-link";
 import Article from "components/02-molecules/article/article";
 import ProjectPreview from "components/02-molecules/project-preview/project-preview";
 import Page from "components/04-layouts/page/page";
+import Cards from "components/02-molecules/cards/cards";
 
 const Start = () => {
 
   return (
 		<Page>
+			<Cards />
 			<ProjectPreview />
 			<ProjectPreview />
 			<Article />

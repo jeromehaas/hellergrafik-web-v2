@@ -1,0 +1,31 @@
+.cards {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 16px;
+	
+	&__item, .item {
+		background-color: $white-100;
+		padding: 32px;
+
+		&__heading {
+			text-align: center;
+			margin-bottom: 16px;
+		}
+		
+		&__list, .list {
+			
+			&__item {
+				text-align: center;;
+			}
+
+		}
+
+	}
+
+	@media (min-width: 700px) {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+	}
+
+}
