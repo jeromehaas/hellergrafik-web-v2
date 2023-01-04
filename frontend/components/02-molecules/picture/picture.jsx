@@ -1,12 +1,12 @@
 import Image from "next/image";
 import PropTypes from 'prop-types';
 
-const Picture = ({ className, orientation, images, alt }) => {
+const Picture = ({ className, images }) => {
 	
 	return (
 		<div className={`${ className } picture`}>
-			{ images.map((image) => (
-				<Image className="picture__item" src={ image.src } width={ 2500 } height={ orientation === 'portrait' ? 2500 : 2950 } alt={ image.alt }  />
+			{ images.map((image, index) => (
+				<Image className="picture__item" key={ index } src={ image.src } width={ 2500 } height={ image.orientation === 'portrait' ? 2500 : 2950 } alt={ image.alt }  />
 			))}
 		</div>
 	)
