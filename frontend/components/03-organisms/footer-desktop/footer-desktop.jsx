@@ -14,8 +14,8 @@ const FooterDesktop = () => {
 						<a className="connectors__item default-link" target="_blank" href="https://www.instagram.com/hellergrafik/">Instagram</a>
 				</address>
 				<address className="footer-desktop__links links">
-					<a className="links__item default-link" href="#">Impressum</a>
-					<a className="links__item default-link" href="#">Datenschutz</a>
+					<a className="links__item default-link" href="/imprint">Impressum</a>
+					<a className="links__item default-link" href="/data-privacy">Datenschutz</a>
 					<p className="links__item">©Isabel Heller</p>
 				</address>
   	  </div>

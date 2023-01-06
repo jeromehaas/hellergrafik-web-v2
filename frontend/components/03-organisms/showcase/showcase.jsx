@@ -5,9 +5,9 @@ const Showcase = () => {
 
 	return (
 		<Section className="showcase">
-			<ProjectPreview title="XUND Bildung Gesundheit Zentralschweiz" href="/project/xund-bildung-gesundheit-zentralschweiz" image={{ src: '/images/projects/xundzebi/01-xundzebi.jpg', alt: 'Project' }} />	
-			<ProjectPreview title="Albertini" href="Ablertini" image={{ src: '/images/projects/albertini/01-albertini.jpg', alt: 'Project' }} />	
-			<ProjectPreview title="heller grafik" href="/project/heller-grafik" image={{ src: '/images/projects/hellergrafik/07-hellergrafik.jpg', alt: 'Project' }} />	
+			<ProjectPreview title="XUND Bildung Gesundheit Zentralschweiz" href="/projects/xundzebi" image={{ src: '/images/projects/xundzebi/01-xundzebi.jpg', alt: 'Project' }} />	
+			<ProjectPreview title="Albertini" href="/projects/albertini" image={{ src: '/images/projects/albertini/01-albertini.jpg', alt: 'Project' }} />	
+			<ProjectPreview title="heller grafik" href="/projects/hellergrafik" image={{ src: '/images/projects/hellergrafik/07-hellergrafik.jpg', alt: 'Project' }} />	
 		</Section>	
 	)
 
