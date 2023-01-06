@@ -1,12 +1,12 @@
 .cards {
 	display: grid;
 	grid-template-columns: auto;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: auto auto;
 	grid-gap: 32px;
 	
 	&__item, .item {
 		background-color: $white-100;
-		padding: 32px;
+		padding: 64px;
 
 		&__heading {
 			text-align: center;
@@ -23,7 +23,7 @@
 
 	}
 
-	@media (min-width: 700px) {
+	@media (min-width: 1000px) {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto;
 	}

@@ -9,27 +9,24 @@ const Cards = ({ className }) => {
 			<div className="cards__item item">
 				<Heading className="item__heading" level="h3">Meine Leistungen</Heading>
 				<ul className="item__list list">
-					<Text className="list__item">Branding</Text>
-					<Text className="list__item">Braind Strategy</Text>
-					<Text className="list__item">Brand Identity</Text>
-					<Text className="list__item">Print Design</Text>
-					<Text className="list__item">Editorial Design</Text>
-					<Text className="list__item">Digital Design</Text>
-					<Text className="list__item">Packaging Design</Text>
-					<Text className="list__item">Campain Design</Text>
+					<Text className="list__item text--big">Branding</Text>
+					<Text className="list__item text--big">Braind Strategy</Text>
+					<Text className="list__item text--big">Brand Identity</Text>
+					<Text className="list__item text--big">Print Design</Text>
+					<Text className="list__item text--big">Editorial Design</Text>
+					<Text className="list__item text--big">Digital Design</Text>
+					<Text className="list__item text--big">Packaging Design</Text>
+					<Text className="list__item text--big">Campain Design</Text>
 				</ul>
 			</div>
 			<div className="cards__item item">
-				<Heading className="item__heading" level="h3">Meine Leistungen</Heading>
+				<Heading className="item__heading" level="h3">Meine Werte</Heading>
 				<ul className="item__list list">
-					<Text className="list__item">Branding</Text>
-					<Text className="list__item">Braind Strategy</Text>
-					<Text className="list__item">Brand Identity</Text>
-					<Text className="list__item">Print Design</Text>
-					<Text className="list__item">Editorial Design</Text>
-					<Text className="list__item">Digital Design</Text>
-					<Text className="list__item">Packaging Design</Text>
-					<Text className="list__item">Campain Design</Text>
+					<Text className="list__item text--big">Ganzheitlich</Text>
+					<Text className="list__item text--big">Effektiv</Text>
+					<Text className="list__item text--big">Empathisch</Text>
+					<Text className="list__item text--big">Nachhaltig</Text>
+					<Text className="list__item text--big">Passioniert</Text>
 				</ul>
 			</div>
 		</div>
