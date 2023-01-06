@@ -13,7 +13,7 @@ const ProjectDetail = () => {
                 details={[
                     { id: 1, type: 'text', title: "Realisation", content: '2020' },
                     { id: 2, type: 'text', title: "Leistungen", content: 'Branding, Print Design, Digital Design' },
-                    { id: 3, type: 'table', title: "Laufbahn", content: '', table: [
+                    { id: 3, type: 'table', title: "Laufbahn", content: [
                         { id: 10, title: '2018 - 2019', value: 'Lehrgang Digital Experience Design, SfG Aargau' },
                         { id: 11, title: '2014 – 2016', value: 'Typografische Gestalterin EFA, SfG Bern und Biel' },
                         { id: 12, title: '2013 – 2014', value: 'Tagesklasse «Sehen und Gestalten», Gestaltungsschule Farbmühle, Luzern' },
