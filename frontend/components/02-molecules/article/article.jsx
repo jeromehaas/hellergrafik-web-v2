@@ -1,27 +1,21 @@
 import Heading from "components/01-atoms/heading/heading";
 import Text from "components/01-atoms/text/text";
+import Table from "components/01-atoms/table/table";
 
-const Article = ({ className, title, text }) => {
+const Article = ({ className, title, text, details }) => {
 
 	return (
 			<div className={`${ className } article`}>
 				<Heading className="article__heading">{ title }</Heading>	
-				<div className="article__text text">
-					<Text className="text__item">{ text }</Text>
-				</div>
+				<Text className="article__text">{ text }</Text>
 				<div className="article__details details">
-					<div className="details__item item">
-						<Heading className="item__heading" level="h3">Realisation</Heading>
-						<Text className="item__text">2020</Text>
-					</div>
-					<div className="details__item item">
-						<Heading className="item__heading" level="h3">Leistungen</Heading>
-						<Text className="item__text">Branding, Print Design, Digital Design</Text>
-					</div>
-					<div className="details__item item">
-						<Heading className="item__heading" level="h3">Realisation</Heading>
-						<Text className="item__text">2020</Text>
-					</div>
+					{details.map((detail) => (
+          				<div className="details__item item" key={ detail.id }>
+							<Heading className="item__heading" level="h3">{ detail.title }</Heading>
+							{ detail.content && <Text className="item__text">{ detail.content }</Text> }
+							{ detail.table && <Table className="item__table">{ detail.table }</Table> }
+						</div>
+					))}
 				</div>	
 			</div>
 	);

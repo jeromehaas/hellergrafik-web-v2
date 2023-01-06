@@ -13,13 +13,9 @@
 			margin-bottom: 0
 		}
 
-		&__text, .text {
+		&__text {
 			grid-area: text;
-
-			&__item {
-				margin-bottom: 16px;
-			}
-
+			margin-bottom: 32px;
 		}
 
 		&__details, .details {
