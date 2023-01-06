@@ -5,7 +5,7 @@ const Hero = () => {
 
 	return (
 		<Section className="hero">
-			<Picture className="hero__image" images={ [{ src: '/images/projects/hellergrafik/01-hellergrafik.jpg', orientation: 'landscape', alt: "heller grafik"}] }  />
+			<Picture className="hero__image" images={ [{ src: '/images/projects/hellergrafik/07-hellergrafik.jpg', orientation: 'landscape', alt: "heller grafik"}] }  />
 		</Section>
 	);
 
