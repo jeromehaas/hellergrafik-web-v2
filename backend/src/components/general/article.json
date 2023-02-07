@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_general_articles",
+  "info": {
+    "displayName": "Article",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "details": {
+      "displayName": "detail",
+      "type": "component",
+      "repeatable": true,
+      "component": "general.detail"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.images"
+    }
+  }
+}

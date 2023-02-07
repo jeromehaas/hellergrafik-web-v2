@@ -16,13 +16,31 @@
 		&__text {
 			grid-area: text;
 			margin-bottom: 32px;
+
+			& > p {
+				margin-bottom: 16px;
+			}
+
 		}
 
 		&__details, .details {
 			grid-area: details;
 
-			&__item {
+			&__item, .item {
 				margin-bottom: 16px;
+
+				&__detail, .detail {
+
+					&__text {
+
+						& > p > a { 
+							text-decoration: underline !important;
+						}
+
+					} 
+
+				}
+
 			}
 
 		}
@@ -31,7 +49,7 @@
 			grid-template-areas: 
 				"heading text"
 				"heading details";
-			grid-template-columns: 400px auto;
+			grid-template-columns: 440px auto;
 			grid-template-rows: auto auto auto auto;
 
 			&__heading {

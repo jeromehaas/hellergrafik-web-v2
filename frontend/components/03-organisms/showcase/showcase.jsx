@@ -1,13 +1,21 @@
 import Section from "components/04-layouts/section/section";
 import ProjectPreview from "components/02-molecules/project-preview/project-preview";
 
-const Showcase = () => {
+const Showcase = ({ data }) => {
+	console.log(data);
 
 	return (
 		<Section className="showcase">
-			<ProjectPreview title="XUND Bildung Gesundheit Zentralschweiz" href="/projects/xundzebi" image={{ src: '/images/projects/xundzebi/01-xundzebi.jpg', alt: 'Project' }} />	
-			<ProjectPreview title="Albertini" href="/projects/albertini" image={{ src: '/images/projects/albertini/01-albertini.jpg', alt: 'Project' }} />	
-			<ProjectPreview title="heller grafik" href="/projects/hellergrafik" image={{ src: '/images/projects/hellergrafik/07-hellergrafik.jpg', alt: 'Project' }} />	
+
+			{ data.projects.data.map((item) => (
+				<ProjectPreview 
+					className="showcase__item" 
+					title={ item.attributes.article.heading } 
+					href={`/projects/${ item.id }`} 
+					image={{ src: `http://localhost:1337${ item.attributes.teaser.data.attributes.formats?.large.url || item.attributes.teaser.data.attributes.url }`, alt: item.attributes.article.heading }} 
+					key={ item.id }
+				/>	
+			))}
 		</Section>	
 	)
 

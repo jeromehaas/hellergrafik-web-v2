@@ -1,13 +1,30 @@
 import Page from "components/04-layouts/page/page";
-import Projects from "components/03-organisms/projects/projects";
+import Portfolio from "components/03-organisms/portfolio/portfolio";
+import { GET_PORTFOLIO } from "graphql/queries";
+import client from "graphql/client";
 
-const Work = () => {
+const Work = ({ data }) => {
 
 	return (
 		<Page>
-			<Projects />
+			<Portfolio data={ data.portfolio } />
 		</Page>
-	)
+	);
+
+};
+
+export async function getServerSideProps() {
+
+	const portfolio = await client.query({ query: GET_PORTFOLIO() })
+
+	return {
+		props: {
+			data: {
+				portfolio: portfolio.data.portfolio.data.attributes
+			}
+		}
+	}
+
 
 };
 
