@@ -4,8 +4,6 @@ import Picture from "components/02-molecules/picture/picture";
 
 const ProjectDetail = ({ data }) => {
 
-    console.log(data);
-
     return (
         <Section className="project-detail">
             <Picture 

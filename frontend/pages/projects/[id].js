@@ -6,9 +6,6 @@ import client from 'graphql/client';
 
 const Project = ({ data }) => {
 
-    console.log(data);
-
-
     return (
         <Page>
             <ProjectDetail  data={ data.projectDetail } />

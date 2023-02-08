@@ -1,11 +1,12 @@
 .page {
 	background-color: $white-80;
-	
+	width: 100%;
+
+	&__inner {
 		width: 100%;
 		max-width: 2560px;
-		
-		@media (min-width: 700px) {
-		}
-		
+		margin: 0 auto;
 	}
+
+}
 

@@ -2,7 +2,6 @@ import Section from "components/04-layouts/section/section";
 import ProjectPreview from "components/02-molecules/project-preview/project-preview";
 
 const Showcase = ({ data }) => {
-	console.log(data);
 
 	return (
 		<Section className="showcase">

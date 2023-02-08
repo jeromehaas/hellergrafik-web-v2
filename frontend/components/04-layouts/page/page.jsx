@@ -9,14 +9,16 @@ import Meta from "components/01-atoms/meta/meta";
 const Page = ({ className, children, meta }) => {
 
 	return (
-		<div className={`${ className } page`}>
-			<NavigationMobile />
-			<NavigationDesktop />
-			<Meta meta={ meta } />
-			{ children }
-			<FooterDesktop />
-			<FooterMobile />
-		</div>
+		<body className={`${ className } page`}>
+			<div className='page__inner'>
+				<NavigationMobile />
+				<NavigationDesktop />
+				<Meta meta={ meta } />
+				{ children }
+				<FooterDesktop />
+				<FooterMobile />
+			</div>
+		</body>
 	);
 
 };
