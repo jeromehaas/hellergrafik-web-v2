@@ -139,6 +139,14 @@ export const GET_PROJECTDETAIL = (id) => {
                     }
                 }
                 }
+                logo {
+                data {
+                    attributes {
+                    formats
+                    url
+                    }
+                }
+                }
             }
             }
         }

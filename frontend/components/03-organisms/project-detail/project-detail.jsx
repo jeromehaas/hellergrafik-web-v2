@@ -8,7 +8,7 @@ const ProjectDetail = ({ data }) => {
         <Section className="project-detail">
             <Picture 
                 className="project-detail__image" 
-				images={[{ src: `http://localhost:1337${ data.teaser.data.attributes.formats?.large.url || data.teaser.data.attributes.url }`, alt: data.article.heading }]}
+				images={[{ src: `http://localhost:1337${ data.logo.data.attributes.formats?.large.url || data.logo.data.attributes.url }`, alt: data.article.heading }]}
                 priority={ true }
             />
             <Article 
