@@ -5,7 +5,6 @@ const Meta = ({ meta }) => {
 
     return (
         <Head>
-            <html lang="de-ch" />
             <title>{ meta.title }</title>
             <meta name="description" content={ meta.description } />
             <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />

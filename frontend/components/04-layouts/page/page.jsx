@@ -5,7 +5,6 @@ import FooterMobile from "components/03-organisms/footer-mobile/footer-mobile";
 import PropTypes from "prop-types";
 import Meta from "components/01-atoms/meta/meta";
 
-
 const Page = ({ className, children, meta }) => {
 
 	return (

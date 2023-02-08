@@ -1,5 +1,5 @@
 *::selection {
-	background-color: transparentize($blue-60, 0.75);
+	background-color: $purple-80;
 	color: #ffffff;
 	opacity: 0.99;
 }
@@ -18,3 +18,4 @@
 body {
 	background-color: $white-80;
 }
+
