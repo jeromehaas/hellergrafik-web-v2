@@ -9,7 +9,7 @@ import Meta from "components/01-atoms/meta/meta";
 const Page = ({ className, children, meta }) => {
 
 	return (
-		<body className={`${ className } page`}>
+		<div className={`${ className } page`}>
 			<div className='page__inner'>
 				<NavigationMobile />
 				<NavigationDesktop />
@@ -18,7 +18,7 @@ const Page = ({ className, children, meta }) => {
 				<FooterDesktop />
 				<FooterMobile />
 			</div>
-		</body>
+		</div>
 	);
 
 };
