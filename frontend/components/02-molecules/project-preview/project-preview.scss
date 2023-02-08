@@ -17,11 +17,29 @@
 
 	}
 
+
 	&__image {
 		display: block;
 		width: 100%;
 		height: auto;
+	}
 
+	&__link {
+
+		& .big-arrow-link__arrow {
+			display: none;
+		}
+	}
+
+	@media (min-width: 850px) {
+
+		
+		&__link {
+			
+			& .big-arrow-link__arrow {
+				display: inline-block;
+			}
+		}
 
 	}
 
