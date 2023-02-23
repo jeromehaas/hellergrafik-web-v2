@@ -1,4 +1,4 @@
-module.exports = [
+module.exports = ({ env }) => [
   'strapi::errors',
 	{
     name: 'strapi::security',
@@ -7,8 +7,8 @@ module.exports = [
         useDefaults: true,
         directives: {
 					'connect-src': ["'self'", 'https:'],
-          'img-src': ["'self'", 'data:', 'blob:', `hello-mars.fra1.digitaloceanspaces.com`],
-          'media-src': ["'self'", 'data:', 'blob:', `hello-mars.fra1.digitaloceanspaces.com`],
+          'img-src': ["'self'", 'data:', 'blob:', `${ env('SPACE_BUCKET')}.${ env('SPACE_ENDPOINT')}`],
+          'media-src': ["'self'", 'data:', 'blob:', `${ env('SPACE_BUCKET')}.${ env('SPACE_ENDPOINT')}`],
           upgradeInsecureRequests: null,
         },
       },
