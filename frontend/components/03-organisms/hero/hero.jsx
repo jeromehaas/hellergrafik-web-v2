@@ -7,7 +7,7 @@ const Hero = ({ data }) => {
 		<Section className="hero">
 			<Picture 
 				className="hero__image" 
-				images={ [{ src: `http://localhost:1337${data.image.data.attributes.formats.large.url}`, orientation: 'landscape', alt: "heller grafik"}] }  
+				images={ [{ src: data.image.data.attributes.formats.large.url, orientation: 'landscape', alt: "heller grafik"}] }  
 				priority={ true }
 			/>
 		</Section>

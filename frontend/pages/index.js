@@ -11,7 +11,7 @@ const Start = ({ data }) => {
 		<Page>
 			<Hero data={ data.hero } />
 			<Intro data={ data.intro } />
-			<Showcase data={ data.showcase } />
+			{/* <Showcase data={ data.showcase } /> */}
 		</Page>
   );
 
@@ -28,7 +28,7 @@ export async function getServerSideProps() {
 			data: {
 				hero: hero.data.hero.data.attributes,
 				intro: intro.data.intro.data.attributes,
-				showcase: showcase.data.showcase.data.attributes
+				// showcase: showcase.data.showcase.data.attributes
 			},
 		},
 	};

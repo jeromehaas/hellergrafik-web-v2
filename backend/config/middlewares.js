@@ -1,6 +1,19 @@
 module.exports = [
   'strapi::errors',
-  'strapi::security',
+	{
+    name: 'strapi::security',
+    config: {
+      contentSecurityPolicy: {
+        useDefaults: true,
+        directives: {
+					'connect-src': ["'self'", 'https:'],
+          'img-src': ["'self'", 'data:', 'blob:', `hello-mars.fra1.digitaloceanspaces.com`],
+          'media-src': ["'self'", 'data:', 'blob:', `hello-mars.fra1.digitaloceanspaces.com`],
+          upgradeInsecureRequests: null,
+        },
+      },
+    },
+  },
   'strapi::cors',
   'strapi::poweredBy',
   'strapi::logger',
