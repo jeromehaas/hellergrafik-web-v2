@@ -8,7 +8,7 @@ const ProjectDetail = ({ data }) => {
         <Section className="project-detail">
             <Picture 
                 className="project-detail__image" 
-				images={[{ src: `http://localhost:1337${ data.logo.data.attributes.formats?.large.url || data.logo.data.attributes.url }`, alt: data.article.heading }]}
+				images={[{ src: `${ data.logo.data.attributes.formats?.large.url || data.logo.data.attributes.url }`, alt: data.article.heading }]}
                 priority={ true }
             />
             <Article 
@@ -17,7 +17,7 @@ const ProjectDetail = ({ data }) => {
                 details={ data.article.details }
             />
             { data.article.images.map((collection, index) => {
-                const src = collection.image.data.map((image) => ({ src: `http://localhost:1337${ image.attributes.formats?.large.url || image.attributes.url }` , alt: data.article.heading }));
+                const src = collection.image.data.map((image) => ({ src: `${ image.attributes.formats?.large.url || image.attributes.url }` , alt: data.article.heading }));
                 return (
                     <Picture 
                         className="project-detail__image" 

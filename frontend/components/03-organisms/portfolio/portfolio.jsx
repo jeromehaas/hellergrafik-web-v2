@@ -9,7 +9,7 @@ const Portfolio = ({ data }) => {
 				<ProjectPreview 
 					title={ item.attributes.article.heading } 
 					href={`/projects/${item.id}`} 
-					image={{ src: `http://localhost:1337${ item.attributes.teaser.data.attributes.formats?.medium.url || item.attributes.teaser.data.attributes.url }`, alt: item.attributes.article.heading }} 
+					image={{ src: `${ item.attributes.teaser.data.attributes.formats?.medium.url || item.attributes.teaser.data.attributes.url }`, alt: item.attributes.article.heading }} 
 					key={ item.id }
 				/>	
 			))}

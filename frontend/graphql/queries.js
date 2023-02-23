@@ -120,6 +120,7 @@ export const GET_PROJECTDETAIL = (id) => {
                     content
                 }
                 images {
+										id
                     image {
                     data {
                         id
@@ -133,6 +134,7 @@ export const GET_PROJECTDETAIL = (id) => {
                 }
                 teaser {
                 data {
+										id
                     attributes {
                     formats
                     url
@@ -141,6 +143,7 @@ export const GET_PROJECTDETAIL = (id) => {
                 }
                 logo {
                 data {
+										id
                     attributes {
                     formats
                     url

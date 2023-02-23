@@ -11,7 +11,7 @@ const Showcase = ({ data }) => {
 					className="showcase__item" 
 					title={ item.attributes.article.heading } 
 					href={`/projects/${ item.id }`} 
-					image={{ src: `http://localhost:1337${ item.attributes.teaser.data.attributes.formats?.large.url || item.attributes.teaser.data.attributes.url }`, alt: item.attributes.article.heading }} 
+					image={{ src: `${ item.attributes.teaser.data.attributes.formats?.large.url || item.attributes.teaser.data.attributes.url }`, alt: item.attributes.article.heading }} 
 					key={ item.id }
 				/>	
 			))}
